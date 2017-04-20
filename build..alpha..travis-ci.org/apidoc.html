@@ -1,0 +1,740 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://n-riesco.github.io/ijavascript"
+
+    >ijavascript (v5.0.19)</a>
+</h1>
+<h4>IJavascript is a Javascript kernel for the Jupyter notebook</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ijavascript">module ijavascript</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.ijavascript">
+            function <span class="apidocSignatureSpan"></span>ijavascript
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ijavascript.</span>rc</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ijavascript.rc">module ijavascript.rc</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.copyAsync">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>copyAsync
+            <span class="apidocSignatureSpan">(src, dst, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.doLog">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>doLog
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.dontLog">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>dontLog
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.getPackageVersion">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>getPackageVersion
+            <span class="apidocSignatureSpan">(packageName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.installKernelAsync">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>installKernelAsync
+            <span class="apidocSignatureSpan">(context, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.log">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>log
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.makeTmpdir">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>makeTmpdir
+            <span class="apidocSignatureSpan">(maxAttempts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.readPackageJson">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>readPackageJson
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.setIPythonInfoAsync">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>setIPythonInfoAsync
+            <span class="apidocSignatureSpan">(context, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.setJupyterInfoAsync">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>setJupyterInfoAsync
+            <span class="apidocSignatureSpan">(context, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.setPaths">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>setPaths
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.setProtocol">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>setProtocol
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ijavascript.rc.spawnFrontend">
+            function <span class="apidocSignatureSpan">ijavascript.rc.</span>spawnFrontend
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ijavascript.rc.</span>context</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ijavascript" id="apidoc.module.ijavascript">module ijavascript</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.ijavascript" id="apidoc.element.ijavascript.ijavascript">
+        function <span class="apidocSignatureSpan"></span>ijavascript
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Kernel(config) {
+    if (config.debug) {
+        log = doLog;
+        global.DEBUG = true;
+    }
+
+<span class="apidocCodeCommentSpan">    /**
+     * Configuration provided by IPython
+     * @member {Object}
+     */
+</span>    this.connection = config.connection;
+    var scheme = this.connection.signature_scheme.slice(&#x22;hmac-&#x22;.length);
+    var key = this.connection.key;
+
+    /**
+     * HeartBeat socket
+     * @member {module:zmq~Socket}
+     */
+    this.hbSocket = zmq.createSocket(&#x22;rep&#x22;);
+
+    /**
+     * IOPub socket
+     * @member {module:jmp~Socket}
+     */
+    this.iopubSocket = new Socket(&#x22;pub&#x22;, scheme, key);
+
+    /**
+     * Shell socket
+     * @member {module:jmp~Socket}
+     */
+    this.shellSocket = new Socket(&#x22;router&#x22;, scheme, key);
+
+    /**
+     * Control socket
+     * @member {module:jmp~Socket}
+     */
+    this.controlSocket = new Socket(&#x22;router&#x22;, scheme, key);
+
+    /**
+     * Flag to hide undefined results
+     * @member {Boolean}
+     */
+    this.hideUndefined = config.hideUndefined;
+
+    /**
+     * Content of kernel_info_reply message
+     * @member {object}
+     */
+    this.kernelInfoReply = config.kernelInfoReply;
+
+    /**
+     * Javascript session
+     * @member {module:nel~Session}
+     */
+    this.session = new Session({
+        cwd: config.cwd,
+        transpile: config.transpile,
+    });
+
+    /**
+     * Callback run at session startup (this callback can be used to setup the
+     * kernel session; e.g. to register a require extensions).
+     * @member {StartupCB}
+     */
+    this.startupCallback = config.startupCallback;
+
+    /**
+     * Path to a Javascript file to be run on session startup. Path to a folder
+     * also accepted, in which case all the Javascript files in the folder will
+     * be run.
+     * @member {String}
+     */
+    this.startupScript = config.startupScript;
+
+    /**
+     * Number of visible execution requests
+     * @member {Number}
+     */
+    this.executionCount = 0;
+
+    /**
+     * IPython/Jupyter protocol version
+     * @member {String}
+     */
+    this.protocolVersion = config.protocolVersion;
+    var majorVersion = parseInt(this.protocolVersion.split(&#x22;.&#x22;)[0]);
+
+    /**
+     * Collection of message handlers that links a message type with the method
+     * handling the response
+     * @member {Object.&#x3c;String, Function&#x3e;}
+     * @see {@link module:handler_v4}
+     * @see {@link module:handler_v5}
+     */
+    this.handlers = (majorVersion &#x3c;= 4) ?
+        require(&#x22;./handlers_v4.js&#x22;) :
+        require(&#x22;./handlers_v5.js&#x22;);
+
+    this._bindSockets();
+
+    this._initSession();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ijavascript.rc" id="apidoc.module.ijavascript.rc">module ijavascript.rc</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.copyAsync" id="apidoc.element.ijavascript.rc.copyAsync">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>copyAsync
+        <span class="apidocSignatureSpan">(src, dst, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function copyAsync(src, dst, callback) {
+    var readStream = fs.createReadStream(src);
+    var writeStream = fs.createWriteStream(dst);
+    if (callback) {
+        readStream.on(&#x22;end&#x22;, callback);
+    }
+    readStream.pipe(writeStream);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.doLog" id="apidoc.element.ijavascript.rc.doLog">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>doLog
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function doLog() {
+    process.stderr.write(&#x22;IJS: &#x22;);
+    console.error.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.dontLog" id="apidoc.element.ijavascript.rc.dontLog">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>dontLog
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function dontLog() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.getPackageVersion" id="apidoc.element.ijavascript.rc.getPackageVersion">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>getPackageVersion
+        <span class="apidocSignatureSpan">(packageName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getPackageVersion(packageName) {
+    var packagePath = path.dirname(require.resolve(packageName));
+    var packageJSON = JSON.parse(
+        fs.readFileSync(path.join(packagePath, &#x22;package.json&#x22;))
+    );
+    return packageJSON.version;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.installKernelAsync" id="apidoc.element.ijavascript.rc.installKernelAsync">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>installKernelAsync
+        <span class="apidocSignatureSpan">(context, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function installKernelAsync(context, callback) {
+    if (context.frontend.majorVersion &#x3c; 3) {
+        if (context.flag.install) {
+            console.error(
+                &#x22;Error: Installation of kernel specs requires Jupyter v3+&#x22;
+            );
+        }
+
+        if (callback) {
+            callback();
+        }
+
+        return;
+    }
+
+    // Create temporary spec folder
+    var tmpdir = makeTmpdir();
+    var specDir = path.join(tmpdir, &#x22;javascript&#x22;);
+    fs.mkdirSync(specDir);
+
+    // Create spec file
+    var specFile = path.join(specDir, &#x22;kernel.json&#x22;);
+    var spec = {
+        argv: context.args.kernel,
+        display_name: &#x22;Javascript (Node.js)&#x22;,
+        language: &#x22;javascript&#x22;,
+    };
+    fs.writeFileSync(specFile, JSON.stringify(spec));
+
+    // Copy logo files
+    var logoDir = path.join(context.path.images, &#x22;nodejs&#x22;);
+    var logo32Src = path.join(logoDir, &#x22;js-green-32x32.png&#x22;);
+    var logo32Dst = path.join(specDir, &#x22;logo-32x32.png&#x22;);
+    var logo64Src = path.join(logoDir, &#x22;js-green-64x64.png&#x22;);
+    var logo64Dst = path.join(specDir, &#x22;logo-64x64.png&#x22;);
+    copyAsync(logo32Src, logo32Dst, function() {
+        copyAsync(logo64Src, logo64Dst, function() {
+
+            // Install kernel spec
+            var args = [
+                context.args.frontend[0],
+                &#x22;kernelspec install --replace&#x22;,
+                specDir,
+            ];
+            if (context.flag.install !== &#x22;global&#x22;) {
+                args.push(&#x22;--user&#x22;);
+            }
+            var cmd = args.join(&#x22; &#x22;);
+            exec(cmd, function(error, stdout, stderr) {
+
+                // Remove temporary spec folder
+                fs.unlinkSync(specFile);
+                fs.unlinkSync(logo32Dst);
+                fs.unlinkSync(logo64Dst);
+                fs.rmdirSync(specDir);
+                fs.rmdirSync(tmpdir);
+
+                if (error) {
+                    console.error(util.format(&#x22;Error running `%s`&#x22;, cmd));
+                    console.error(error.toString());
+                    if (stderr) console.error(stderr.toString());
+                    log(&#x22;CONTEXT:&#x22;, context);
+                    process.exit(1);
+                }
+
+                if (callback) {
+                    callback();
+                }
+            });
+        });
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.log" id="apidoc.element.ijavascript.rc.log">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>log
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function dontLog() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        &#x22;jupyter&#x22;,
+        &#x22;notebook&#x22;,
+    ];
+    context.flag.hideUndefined = false;
+
+    process.argv.slice(2).forEach(function(e) {
+        if (e === &#x22;--help&#x22;) {
+console.<span class="apidocCodeKeywordSpan">log</span>(usage);
+context.args.frontend.push(e);
+
+        } else if (e === &#x22;--ijs-debug&#x22;) {
+DEBUG = true;
+log = doLog;
+
+context.flag.debug = true;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.makeTmpdir" id="apidoc.element.ijavascript.rc.makeTmpdir">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>makeTmpdir
+        <span class="apidocSignatureSpan">(maxAttempts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function makeTmpdir(maxAttempts) {
+    maxAttempts = maxAttempts ? maxAttempts : 10;
+    var attempts = 0;
+
+    var tmpdir;
+    while (!tmpdir) {
+        attempts++;
+        try {
+            tmpdir = path.join(
+                os.tmpdir(),
+                crypto.randomBytes(16).toString(&#x27;hex&#x27;)
+            );
+            fs.mkdirSync(tmpdir);
+        } catch (e) {
+            if (attempts &#x3e;= maxAttempts)
+                throw e;
+            tmpdir = null;
+        }
+    }
+
+    return tmpdir;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.readPackageJson" id="apidoc.element.ijavascript.rc.readPackageJson">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>readPackageJson
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function readPackageJson(context) {
+    context.packageJSON = JSON.parse(
+        fs.readFileSync(path.join(context.path.root, &#x22;package.json&#x22;))
+    );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.setIPythonInfoAsync" id="apidoc.element.ijavascript.rc.setIPythonInfoAsync">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>setIPythonInfoAsync
+        <span class="apidocSignatureSpan">(context, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setIPythonInfoAsync(context, callback) {
+    exec(&#x22;ipython --version&#x22;, function(error, stdout, stderr) {
+        if (error) {
+            if (context.frontend.error) {
+                console.error(&#x22;Error running `jupyter --version`&#x22;);
+                console.error(context.frontend.error.toString());
+            }
+            console.error(&#x22;Error running `ipython --version`&#x22;);
+            console.error(error.toString());
+            log(&#x22;CONTEXT:&#x22;, context);
+            process.exit(1);
+        }
+
+        context.args.frontend[0] = &#x22;ipython&#x22;;
+        context.frontend.version = stdout.toString().trim();
+        context.frontend.majorVersion = parseInt(
+            context.frontend.version.split(&#x22;.&#x22;)[0]
+        );
+        if (isNaN(context.frontend.majorVersion)) {
+            console.error(
+                &#x22;Error parsing IPython version:&#x22;,
+                context.frontend.version
+            );
+            log(&#x22;CONTEXT:&#x22;, context);
+            process.exit(1);
+        }
+
+        if (callback) {
+            callback();
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.setJupyterInfoAsync" id="apidoc.element.ijavascript.rc.setJupyterInfoAsync">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>setJupyterInfoAsync
+        <span class="apidocSignatureSpan">(context, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setJupyterInfoAsync(context, callback) {
+    exec(&#x22;jupyter --version&#x22;, function(error, stdout, stderr) {
+        if (error) {
+            context.frontend.error = error;
+            setIPythonInfoAsync(context, callback);
+            return;
+        }
+
+        context.args.frontend[0] = &#x22;jupyter&#x22;;
+        context.frontend.version = stdout.toString().trim();
+        context.frontend.majorVersion = parseInt(
+            context.frontend.version.split(&#x22;.&#x22;)[0]
+        );
+        if (isNaN(context.frontend.majorVersion)) {
+            console.error(
+                &#x22;Error parsing Jupyter version:&#x22;,
+                context.frontend.version
+            );
+            log(&#x22;CONTEXT:&#x22;, context);
+            process.exit(1);
+        }
+
+        if (callback) {
+            callback();
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.setPaths" id="apidoc.element.ijavascript.rc.setPaths">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>setPaths
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setPaths(context) {
+    context.path.node = process.argv[0];
+    context.path.root = path.dirname(path.dirname(
+        fs.realpathSync(process.argv[1])
+    ));
+    context.path.kernel = path.join(context.path.root, &#x22;lib&#x22;, &#x22;kernel.js&#x22;);
+    context.path.images = path.join(context.path.root, &#x22;images&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.setProtocol" id="apidoc.element.ijavascript.rc.setProtocol">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>setProtocol
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setProtocol(context) {
+    if (!context.protocol.version) {
+        if (context.frontend.majorVersion &#x3c; 3) {
+            context.protocol.version = &#x22;4.1&#x22;;
+            context.protocol.majorVersion = 4;
+        } else {
+            context.protocol.version = &#x22;5.0&#x22;;
+            context.protocol.majorVersion = 5;
+        }
+    }
+
+    context.args.kernel.push(&#x22;--protocol=&#x22; + context.protocol.version);
+
+    if (context.frontend.majorVersion &#x3c; 3) {
+        context.args.frontend.push(util.format(
+            &#x22;--KernelManager.kernel_cmd=[&#x27;%s&#x27;]&#x22;,
+            context.args.kernel.join(&#x22;&#x27;, &#x27;&#x22;)
+        ));
+    }
+
+    if (context.frontend.majorVersion &#x3c; 3 &#x26;&#x26;
+        context.protocol.majorVersion &#x3e;= 5) {
+        console.warn(&#x22;Warning: Protocol v5+ requires Jupyter v3+&#x22;);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ijavascript.rc.spawnFrontend" id="apidoc.element.ijavascript.rc.spawnFrontend">
+        function <span class="apidocSignatureSpan">ijavascript.rc.</span>spawnFrontend
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function spawnFrontend(context) {
+    var cmd = context.args.frontend[0];
+    var args = context.args.frontend.slice(1);
+    var frontend = spawn(cmd, args, {
+        stdio: &#x22;inherit&#x22;
+    });
+
+    // Relay SIGINT onto the frontend
+    var signal = &#x22;SIGINT&#x22;;
+    process.on(signal, function() {
+        frontend.emit(signal);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
